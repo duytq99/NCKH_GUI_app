@@ -15,7 +15,7 @@ import torch.nn                 as nn
 from   torch.nn.parameter       import Parameter
 from   torch.nn.modules.utils   import _pair, _quadruple
 from   torch.nn                 import Module
-from    torch.distributions     import uniform
+from   torch.distributions      import uniform
 from   quaternion_ops           import *
 import math
 import sys
