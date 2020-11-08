@@ -25,6 +25,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.init()
         self.browseButton.clicked.connect(self.get_file_path)
         self.processButton.clicked.connect(self.process) 
+        self.evalButton.clicked.connect(self.show_popup)
              
         
     def get_file_path(self):
@@ -40,17 +41,40 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.imgDark = torch.unsqueeze(self.imgDark, dim=0)
         self.imgDark = torch.cat((self.zero_channel.to(self.device), self.imgDark), dim=1)
         logging.info("{} Finish loading image: {}".format(time.ctime(), self.imagePath))
+        
+        gt_name = self.imagePath.split('/')[-1]
+        gt_path = os.path.join('img_test\lol_dataset\eval15\high', gt_name)
+        self.imgGroundTruth = plt.imread(gt_path) 
+        self.imgGroundTruth = self.imgGroundTruth.transpose((2, 0, 1))
+        self.imgGroundTruth = torch.from_numpy(self.imgGroundTruth).type(torch.FloatTensor)
+        self.imgGroundTruth = torch.unsqueeze(self.imgGroundTruth, dim=0)
+        self.imgGroundTruth = torch.cat((self.zero_channel.to(self.device), self.imgGroundTruth), dim=1)
     
     def process(self):
         start_time = time.time()
         self.imgOut = self.net(self.imgDark)
         self.imgOut = torch.clamp(self.imgOut, 0.0, 1.0)
         logging.info("{} Processing time: {}".format(time.ctime(), time.time()-start_time))
-        self.evaluate(self.imgDark, self.imgOut)
+        # self.evaluate(self.imgDark, self.imgOut)
         self.save_image_imshow(self.imgOut)
+        print(self.evaluate(self.imgDark, self.imgOut, self.imgGroundTruth))
         
-    def evaluate(self, dark_img, out_img):
-        pass
+    def evaluate(self, dark_img, out_img, gt_img):
+        self.psnr_before = PSNR(dark_img, gt_img)
+        print('PSNR before: ', self.psnr_before)
+        self.psnr_after = PSNR(out_img, gt_img)
+        print('PSNR after: ', self.psnr_after)
+        self.ssim_before = SSIM(dark_img, gt_img)
+        print('SSIM before: ', self.ssim_before)
+        self.ssim_after = SSIM(out_img, gt_img)
+        print('SSIM after: ', self.ssim_after)
+        self.bch_gt = BCH(gt_img)
+        print('BCH ground truth', self.bch_gt)
+        self.bch_before = BCH(dark_img)
+        print('BCH before: ', self.bch_before)
+        self.bch_after = BCH(out_img)
+        print('BCH after: ', self.bch_after)
+        return 'Eval done'
     
     def save_image_imshow(self, image):
         output = self.imgOut.cpu().detach()[0,1:,:,:].numpy()*255.0
@@ -86,6 +110,21 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.zero_channel = torch.zeros((1,1,400,600))
         self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
         self.load_model() 
+    
+    def show_popup(self):
+        msg = QMessageBox()
+        msg.setWindowTitle("Low light Image Enhancement Evaluation")
+        text1 = "PSNR Before: {:.4f}".format(self.psnr_before) + "\nPSNR After: {:.4f}".format(self.psnr_after)+ \
+                "\nSSIM Before: {:.4f}".format(self.ssim_before) + "\nSSIM After: {:.4f}".format(self.ssim_after) + \
+                "\nBCH Before: {:.4f}".format(self.bch_before) + "\nBCH After: {:.4f}".format(self.bch_after) + "\nBCH Ground Truth: {:.4f}".format(self.bch_gt)
+        msg.setText(text1)
+        msg.setIcon(QMessageBox.Information)
+        msg.setStandardButtons(QMessageBox.Ok)
+        msg.setDefaultButton(QMessageBox.Ok)
+        # text2 = "Real Resnet34 Predicting Result"
+        # msg.setInformativeText(text2)
+        msg.exec_()
+
                   
 def main():        
     app = QtWidgets.QApplication(sys.argv)

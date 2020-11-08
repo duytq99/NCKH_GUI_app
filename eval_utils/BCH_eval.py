@@ -27,7 +27,7 @@ def BCH(image):
     matrix_XYZ = torch.tensor(((0.49, 0.31, 0.2), 
                                (0.17697, 0.8124, 0.01063), 
                                (0.0, 0.01, 0.99)), dtype = torch.float32)/0.17697
-    image = image[0,:,:,:].permute(1,2,0)
+    image = image[0,1:,:,:].permute(1,2,0)
     # print(image.shape)
     XYZ = torch.matmul(image, matrix_XYZ)
     

@@ -238,7 +238,7 @@
       <x>460</x>
       <y>920</y>
       <width>961</width>
-      <height>101</height>
+      <height>104</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout_5">
@@ -276,6 +276,18 @@
        </property>
        <property name="text">
         <string>Process</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="evalButton">
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Evaluate</string>
        </property>
       </widget>
      </item>

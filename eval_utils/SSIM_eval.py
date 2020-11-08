@@ -3,9 +3,10 @@ import matplotlib.pyplot as plt
 import torch
 from time import time
 sys.path.insert(0, 'pytorch_ssim')
-import eval_utils.pytorch_ssim
+import eval_utils.pytorch_ssim as pytorch_ssim
 def SSIM(img1, img2):
-    
+    img1 = img1[:,:,:,:]
+    img2 = img2[:,:,:,:]
     return pytorch_ssim.ssim(img1, img2).item()
 
 if __name__ == "__main__":

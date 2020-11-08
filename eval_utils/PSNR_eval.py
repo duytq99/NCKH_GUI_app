@@ -5,6 +5,8 @@ import tifffile
 from time import time 
 
 def PSNR(img1, img2):
+    img1 = img1[:,:,:,:]
+    img2 = img2[:,:,:,:]
     # PIXEL_MAX = 255.0
     # PIXEL_MAX = 65536
     PIXEL_MAX = 1.0

@@ -238,3 +238,107 @@ INFO:root:Fri Nov  6 11:02:02 2020 Path to test Image: E:/Project_DL/NCKH_GUI_ap
 INFO:root:Fri Nov  6 11:02:02 2020 Finish loading image: E:/Project_DL/NCKH_GUI_app/img_test/lol_dataset/eval15/low/780.png
 INFO:root:Fri Nov  6 11:02:26 2020 Processing time: 23.089170694351196
 INFO:root:Fri Nov  6 11:02:26 2020 Image saved 
+INFO:root:
+
+INFO:root:Fri Nov  6 11:16:12 2020 Loading model to device cpu
+INFO:root:Fri Nov  6 11:16:37 2020 Loading checkpoint 'checkpoint/checkpoint_best.pth.tar'
+INFO:root:Fri Nov  6 11:16:38 2020 Loaded checkpoint 'checkpoint/checkpoint_best.pth.tar' (epoch 654)
+INFO:root:Fri Nov  6 11:16:38 2020 Finish loading model in 26.121710538864136
+INFO:root:Fri Nov  6 11:17:01 2020 Path to test Image: E:/Project_DL/NCKH_GUI_app/img_test/lol_dataset/eval15/low/748.png
+INFO:root:Fri Nov  6 11:17:01 2020 Finish loading image: E:/Project_DL/NCKH_GUI_app/img_test/lol_dataset/eval15/low/748.png
+INFO:root:Fri Nov  6 11:17:25 2020 Processing time: 21.78855037689209
+INFO:root:Fri Nov  6 11:17:25 2020 Image saved 
+INFO:root:
+
+INFO:root:Sun Nov  8 16:45:29 2020 Loading model to device cpu
+INFO:root:Sun Nov  8 16:45:47 2020 Loading checkpoint 'checkpoint/checkpoint_best.pth.tar'
+INFO:root:Sun Nov  8 16:45:48 2020 Loaded checkpoint 'checkpoint/checkpoint_best.pth.tar' (epoch 654)
+INFO:root:Sun Nov  8 16:45:48 2020 Finish loading model in 18.677597045898438
+INFO:root:Sun Nov  8 16:47:18 2020 Path to test Image: E:/Project_DL/NCKH_GUI_app/img_test/lol_dataset/eval15/low/22.png
+INFO:root:Sun Nov  8 16:47:18 2020 Finish loading image: E:/Project_DL/NCKH_GUI_app/img_test/lol_dataset/eval15/low/22.png
+INFO:root:Sun Nov  8 16:47:36 2020 Processing time: 15.75831913948059
+INFO:root:Sun Nov  8 16:47:36 2020 Image saved 
+INFO:root:Sun Nov  8 16:48:10 2020 Path to test Image: E:/Project_DL/NCKH_GUI_app/img_test/lol_dataset/eval15/low/748.png
+INFO:root:Sun Nov  8 16:48:11 2020 Finish loading image: E:/Project_DL/NCKH_GUI_app/img_test/lol_dataset/eval15/low/748.png
+INFO:root:Sun Nov  8 16:48:29 2020 Processing time: 16.986690759658813
+INFO:root:Sun Nov  8 16:48:29 2020 Image saved 
+INFO:root:
+
+INFO:root:Sun Nov  8 17:04:08 2020 Loading model to device cpu
+INFO:root:Sun Nov  8 17:04:25 2020 Loading checkpoint 'checkpoint/checkpoint_best.pth.tar'
+INFO:root:Sun Nov  8 17:04:25 2020 Loaded checkpoint 'checkpoint/checkpoint_best.pth.tar' (epoch 654)
+INFO:root:Sun Nov  8 17:04:25 2020 Finish loading model in 17.395789861679077
+INFO:root:Sun Nov  8 17:05:09 2020 Path to test Image: E:/Project_DL/NCKH_GUI_app/img_test/lol_dataset/eval15/low/780.png
+INFO:root:Sun Nov  8 17:05:09 2020 Finish loading image: E:/Project_DL/NCKH_GUI_app/img_test/lol_dataset/eval15/low/780.png
+INFO:root:
+
+INFO:root:Sun Nov  8 17:06:05 2020 Loading model to device cpu
+INFO:root:Sun Nov  8 17:06:23 2020 Loading checkpoint 'checkpoint/checkpoint_best.pth.tar'
+INFO:root:Sun Nov  8 17:06:23 2020 Loaded checkpoint 'checkpoint/checkpoint_best.pth.tar' (epoch 654)
+INFO:root:Sun Nov  8 17:06:23 2020 Finish loading model in 17.51668119430542
+INFO:root:Sun Nov  8 17:06:37 2020 Path to test Image: E:/Project_DL/NCKH_GUI_app/img_test/lol_dataset/eval15/low/79.png
+INFO:root:Sun Nov  8 17:06:37 2020 Finish loading image: E:/Project_DL/NCKH_GUI_app/img_test/lol_dataset/eval15/low/79.png
+INFO:root:
+
+INFO:root:Sun Nov  8 17:07:17 2020 Loading model to device cpu
+INFO:root:Sun Nov  8 17:07:35 2020 Loading checkpoint 'checkpoint/checkpoint_best.pth.tar'
+INFO:root:Sun Nov  8 17:07:36 2020 Loaded checkpoint 'checkpoint/checkpoint_best.pth.tar' (epoch 654)
+INFO:root:Sun Nov  8 17:07:36 2020 Finish loading model in 18.716561317443848
+INFO:root:Sun Nov  8 17:07:43 2020 Path to test Image: E:/Project_DL/NCKH_GUI_app/img_test/lol_dataset/eval15/low/748.png
+INFO:root:Sun Nov  8 17:07:43 2020 Finish loading image: E:/Project_DL/NCKH_GUI_app/img_test/lol_dataset/eval15/low/748.png
+INFO:root:Sun Nov  8 17:08:03 2020 Processing time: 17.539658069610596
+INFO:root:Sun Nov  8 17:08:03 2020 Image saved 
+INFO:root:
+
+INFO:root:Sun Nov  8 17:12:13 2020 Loading model to device cpu
+INFO:root:Sun Nov  8 17:12:33 2020 Loading checkpoint 'checkpoint/checkpoint_best.pth.tar'
+INFO:root:Sun Nov  8 17:12:33 2020 Loaded checkpoint 'checkpoint/checkpoint_best.pth.tar' (epoch 654)
+INFO:root:Sun Nov  8 17:12:33 2020 Finish loading model in 19.48584222793579
+INFO:root:Sun Nov  8 17:12:49 2020 Path to test Image: E:/Project_DL/NCKH_GUI_app/img_test/lol_dataset/eval15/low/111.png
+INFO:root:Sun Nov  8 17:12:49 2020 Finish loading image: E:/Project_DL/NCKH_GUI_app/img_test/lol_dataset/eval15/low/111.png
+INFO:root:Sun Nov  8 17:13:09 2020 Processing time: 17.55015516281128
+INFO:root:Sun Nov  8 17:13:09 2020 Image saved 
+INFO:root:
+
+INFO:root:Sun Nov  8 17:13:45 2020 Loading model to device cpu
+INFO:root:Sun Nov  8 17:14:04 2020 Loading checkpoint 'checkpoint/checkpoint_best.pth.tar'
+INFO:root:Sun Nov  8 17:14:04 2020 Loaded checkpoint 'checkpoint/checkpoint_best.pth.tar' (epoch 654)
+INFO:root:Sun Nov  8 17:14:04 2020 Finish loading model in 19.00429058074951
+INFO:root:Sun Nov  8 17:15:09 2020 Path to test Image: E:/Project_DL/NCKH_GUI_app/img_test/lol_dataset/eval15/low/179.png
+INFO:root:Sun Nov  8 17:15:09 2020 Finish loading image: E:/Project_DL/NCKH_GUI_app/img_test/lol_dataset/eval15/low/179.png
+INFO:root:Sun Nov  8 17:15:28 2020 Processing time: 17.432756423950195
+INFO:root:Sun Nov  8 17:15:28 2020 Image saved 
+INFO:root:Sun Nov  8 17:15:39 2020 Path to test Image: E:/Project_DL/NCKH_GUI_app/img_test/lol_dataset/eval15/low/547.png
+INFO:root:Sun Nov  8 17:15:39 2020 Finish loading image: E:/Project_DL/NCKH_GUI_app/img_test/lol_dataset/eval15/low/547.png
+INFO:root:Sun Nov  8 17:15:59 2020 Processing time: 18.677592992782593
+INFO:root:Sun Nov  8 17:15:59 2020 Image saved 
+INFO:root:
+
+INFO:root:Sun Nov  8 17:27:22 2020 Loading model to device cpu
+INFO:root:Sun Nov  8 17:27:41 2020 Loading checkpoint 'checkpoint/checkpoint_best.pth.tar'
+INFO:root:Sun Nov  8 17:27:41 2020 Loaded checkpoint 'checkpoint/checkpoint_best.pth.tar' (epoch 654)
+INFO:root:Sun Nov  8 17:27:41 2020 Finish loading model in 18.72255253791809
+INFO:root:Sun Nov  8 17:28:24 2020 Path to test Image: E:/Project_DL/NCKH_GUI_app/img_test/lol_dataset/eval15/low/179.png
+INFO:root:Sun Nov  8 17:28:24 2020 Finish loading image: E:/Project_DL/NCKH_GUI_app/img_test/lol_dataset/eval15/low/179.png
+INFO:root:Sun Nov  8 17:28:45 2020 Processing time: 18.544716358184814
+INFO:root:Sun Nov  8 17:28:45 2020 Image saved 
+INFO:root:
+
+INFO:root:Sun Nov  8 17:32:00 2020 Loading model to device cpu
+INFO:root:Sun Nov  8 17:32:18 2020 Loading checkpoint 'checkpoint/checkpoint_best.pth.tar'
+INFO:root:Sun Nov  8 17:32:19 2020 Loaded checkpoint 'checkpoint/checkpoint_best.pth.tar' (epoch 654)
+INFO:root:Sun Nov  8 17:32:19 2020 Finish loading model in 18.72854733467102
+INFO:root:Sun Nov  8 17:32:35 2020 Path to test Image: E:/Project_DL/NCKH_GUI_app/img_test/lol_dataset/eval15/low/79.png
+INFO:root:Sun Nov  8 17:32:35 2020 Finish loading image: E:/Project_DL/NCKH_GUI_app/img_test/lol_dataset/eval15/low/79.png
+INFO:root:Sun Nov  8 17:32:55 2020 Processing time: 18.43282198905945
+INFO:root:Sun Nov  8 17:32:55 2020 Image saved 
+INFO:root:
+
+INFO:root:Sun Nov  8 17:43:08 2020 Loading model to device cpu
+INFO:root:Sun Nov  8 17:43:31 2020 Loading checkpoint 'checkpoint/checkpoint_best.pth.tar'
+INFO:root:Sun Nov  8 17:43:31 2020 Loaded checkpoint 'checkpoint/checkpoint_best.pth.tar' (epoch 654)
+INFO:root:Sun Nov  8 17:43:31 2020 Finish loading model in 22.353168725967407
+INFO:root:Sun Nov  8 17:44:35 2020 Path to test Image: E:/Project_DL/NCKH_GUI_app/img_test/lol_dataset/eval15/low/111.png
+INFO:root:Sun Nov  8 17:44:35 2020 Finish loading image: E:/Project_DL/NCKH_GUI_app/img_test/lol_dataset/eval15/low/111.png
+INFO:root:Sun Nov  8 17:44:55 2020 Processing time: 18.08814573287964
+INFO:root:Sun Nov  8 17:44:55 2020 Image saved 
