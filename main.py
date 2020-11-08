@@ -121,10 +121,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         msg.setIcon(QMessageBox.Information)
         msg.setStandardButtons(QMessageBox.Ok)
         msg.setDefaultButton(QMessageBox.Ok)
-        # text2 = "Real Resnet34 Predicting Result"
-        # msg.setInformativeText(text2)
         msg.exec_()
-
                   
 def main():        
     app = QtWidgets.QApplication(sys.argv)
